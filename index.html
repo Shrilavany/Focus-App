@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Stay Focused</h1>
+        <p>Clear your mind, stay focused, and achieve your goals.</p>
+      </header>
+
+      <main class="focus-zone">
+        <label for="time-input">Set your focus time (in minutes):</label>
+        <input type="number" id="time-input" min="1" max="120" value="25" />
+        <div class="timer">
+          <h2 id="time">25:00</h2>
+        </div>
+        <button id="start-btn" class="btn">Start Focusing</button>
+        <button id="home-btn" class="btn" style="display: none">Home</button>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
