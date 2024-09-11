@@ -1,0 +1,54 @@
+/* Centered focus text with animation */
+.focus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  position: relative;
+  background: url("foc.gif") no-repeat center center/cover;
+}
+
+.focus-animation {
+  font-size: 5em;
+  font-weight: bold;
+  color: #0e1456;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  animation: focusPulse 2s infinite;
+}
+
+@keyframes focusPulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 40px rgba(214, 48, 49, 0.7), 0 0 60px rgba(214, 48, 49, 1);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+    opacity: 0.8;
+    text-shadow: 0 0 40px rgba(214, 48, 49, 0.7), 0 0 60px rgba(214, 48, 49, 1),
+      0 0 80px rgba(214, 48, 49, 1);
+  }
+}
+
+.enter-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  background-color: #15380b;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enter-btn:hover {
+  background-color: #74b9ff;
+  transform: scale(1.05);
+}

@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("focus...gif") no-repeat center center/cover;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 4em;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.header h1 {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+
+.header p {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.focus-zone {
+  margin-top: 1em;
+}
+
+.timer h2 {
+  font-size: 4em;
+  color: #120975;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #22b5bf;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c222aa;
+}
+/* All previous CSS remains the same */
+
+label {
+  color: #ebebeb;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

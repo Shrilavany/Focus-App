@@ -1,0 +1,174 @@
+/* General Reset */
+body,
+h1,
+h2,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Focus Container */
+.focus-container,
+.goals-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  text-align: center;
+  background: url("foc1.webp") no-repeat center center/cover;
+}
+
+.focus-container {
+  flex-direction: column;
+}
+
+.welcome-message {
+  font-size: 5em;
+  color: #ffffff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.focus-animation {
+  font-size: 4em;
+  font-weight: bold;
+  color: #d63031;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  animation: focusPulse 2s infinite;
+}
+
+/* Animation for focus text */
+@keyframes focusPulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(214, 48, 49, 0.5),
+      0 0 20px rgba(214, 48, 49, 0.7), 0 0 30px rgba(214, 48, 49, 1);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.8;
+    text-shadow: 0 0 20px rgba(214, 48, 49, 0.7), 0 0 30px rgba(214, 48, 49, 1),
+      0 0 40px rgba(214, 48, 49, 1);
+  }
+}
+
+/* Let's Go Button */
+.lets-go-btn {
+  background-color: #00b894; /* Teal background color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* Space above button */
+}
+
+.lets-go-btn:hover {
+  background-color: #009d78; /* Darker teal on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.lets-go-btn:focus {
+  outline: none;
+}
+
+/* Styles for the goals page */
+.goals-container {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px; /* Space between items */
+}
+
+/* Goals Title */
+.goal-title {
+  font-size: 5em; /* Increased size */
+  font-weight: bold;
+  background: linear-gradient(to right, #8782e7, #9394f1);
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Frosted glass effect for goals list */
+.goals-list-container {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between buttons */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit maximum width */
+}
+
+/* Goal Buttons */
+.goal-button {
+  background: rgba(14, 4, 72, 0.9); /* Semi-transparent purple background */
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.5em; /* Increased font size */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.goal-button:hover {
+  background: rgb(211, 13, 188); /* Darker purple on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.goal-button:focus {
+  outline: none;
+}
+
+/* Next Button */
+.next-btn {
+  background-color: #00b894; /* Teal background color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* Space above button */
+  display: none; /* Initially hidden */
+}
+
+.next-btn:hover {
+  background-color: #009d78; /* Darker teal on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.next-btn:focus {
+  outline: none;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Video Containers */
+.video-container {
+  display: none; /* Hide the video containers by default */
+  margin-top: 20px;
+}
